@@ -1,0 +1,443 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	overflow-x:hidden;
+	font-family: 'Nunito', sans-serif;
+	font-size:18px;
+	font-weight:400;
+}
+section{
+	padding:70px 0;
+}
+footer{
+	padding:70px 0;
+}
+:root{
+	--black-bg:#111111;
+	--grey-text:#b5b5b5;
+	--img-bgblack:#353535;
+	--choose-usbg:#0A0A0A;
+	--green-hover:#78f701;
+	--white:#FFFFFF;
+	--drop-bg:#111;
+	--huge-p:#6f6f6f;
+}
+@font-face {
+	font-family: 'Neonderthaw', cursive;
+  src: url(../assets/fonts/Neonderthaw-Regular.ttf);
+  font-weight:400;
+}
+@font-face {
+  font-family:'Nunito';
+  src: url(./assets/fonts/Nunito-Black.ttf);
+  font-weight:900;
+}
+@font-face {
+  font-family:'Nunito';
+  src: url(./assets/fonts/Nunito-Bold.ttf);
+  font-weight:700;
+}
+@font-face {
+  font-family:'Nunito';
+  src: url(./assets/fonts/Nunito-ExtraBold.ttf);
+  font-weight:800;
+}
+@font-face {
+  font-family:'Nunito';
+  src: url(./assets/fonts/Nunito-ExtraLight.ttf);
+  font-weight:200;
+}
+@font-face {
+  font-family:'Nunito';
+  src: url(./assets/fonts/Nunito-Light.ttf);
+  font-weight:300;
+}
+@font-face {
+  font-family:'Nunito';
+  src: url(./assets/fonts/Nunito-Medium.ttf);
+  font-weight:500;
+}
+@font-face {
+  font-family:'Nunito';
+  src: url(./assets/fonts/Nunito-Regular.ttf);
+  font-weight:400
+}
+@font-face {
+  font-family:'Nunito';
+  src: url(./assets/fonts/Nunito-Semibold.ttf);
+  font-weight:600
+}
+/* start header */
+.menu_nav{
+	background-color:var(--black-bg);
+}
+.nav-link{
+	color:white !important;
+	font-weight:600;
+	padding:0 18px !important;
+}
+/* finish header */
+/* start hero */
+.hero{
+	background-image:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url("../images/hero_bg.jpg");
+	min-height:92.1vh;
+	background-position:center;
+	background-size:cover;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.hero_title h2{
+	font-family: 'Neonderthaw', cursive !important;
+	font-size:120px;
+	letter-spacing:35px;
+}
+.hero_title p{
+	font-size:28px;
+	color:var(--grey-text);	
+}
+/* finish hero */
+/* start rise_neoh */
+.rise_neoh{
+	position:relative;
+	background-color:var(--black-bg);
+}
+.rise_img{
+	position:relative;
+	z-index:1;
+}
+.rise_content{
+	padding-left:70px;
+}
+.rise_neoh::after{
+  content: '';
+  position: absolute;
+  width: 34%;
+  height: 42%;
+  background-color:var(--img-bgblack);
+  left: 304px;
+  top: 68px;
+  transform: rotate(5deg);
+}
+.rise_content h2{
+	font-size:36px;
+	font-weight:600;
+	margin-bottom:30px;
+}
+.vr {
+  border: 4px solid var(--img-bgblack);
+  max-width:180px;
+  margin-bottom:40px;
+}
+.rise_content p{
+	color:var(--grey-text);
+	font-size:20px;
+	margin-bottom:30px;
+}
+.rise_neoh::before{
+  content: '';
+  position: absolute;
+  width: 34%;
+  height: 43%;
+  background-color:var(--img-bgblack);
+  right:291px;
+  bottom: 57px;
+  transform: rotate(5deg);
+}
+.right_img{
+	position:relative;
+	z-index:1;
+}
+.rise_nft h2{
+	font-size:36px;
+	font-weight:600;
+	margin-bottom:30px	
+}
+.rise_nft p{
+	color:var(--grey-text);
+	font-size:20px;
+	margin-bottom:30px;
+}
+/* finish rise_neoh */
+/* start why choose us */
+.choose_us{
+	background-color:var(--choose-usbg);
+}
+.choose_heading  h1{
+	font-weight:600;
+}
+.huge{
+	position:relative;	
+	content:'';
+	top:0;
+	left:0;
+}
+.huge_item{
+	position:absolute;
+	content:'';
+	top:-28px;
+	left:0px;
+}
+.huge_item span{
+	background:var(--img-bgblack);
+	padding:0px 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-size:20px;
+	font-weight:600;
+	color:var(--white);
+	background-color:transparent;
+	
+}
+.huge_c h3{
+	font-weight:600;
+	font-size:28px;
+}
+.huge_c p{
+	color:var(--huge-p) !important;
+	font-size:21px;
+}
+.huge:hover .huge_item span{
+	background-color:var(--green-hover);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;	
+}
+.huge_c:hover{
+	border: 2px solid var(--green-hover) !important;
+}
+/* finish why choose us */
+/* start drops */
+.drops{
+	background:var(--drop-bg);
+}
+/* finish drops */
+/* start roadmap */
+.roadmap{
+	background:var(--drop-bg);
+}
+.roa_date span{
+	background:var(--img-bgblack);
+	padding:10px 25px;
+	cursor: pointer;
+}
+.roa_head h3{
+	font-weight:600;
+	margin-bottom:25px;
+}
+.roa_head p{
+	font-weight:400;
+	font-size:20px;
+}
+/* finish roadmap */
+/* start Investors */
+.investors{
+	background:var(--choose-usbg);
+}
+.Invest_img{
+	background-color:var(--black-bg);
+	padding: 40px 60px;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+.Invest_img:hover{
+	background:var(--img-bgblack);
+	cursor: pointer;
+}
+/* finish Investors */
+/* start News */
+.News_neho{
+	background:var(--drop-bg);
+}
+.News_head{
+	background-color:var(--choose-usbg) !important;
+	padding:40px 25px;
+	border-radius:10px;
+}
+.News_date span{
+	background:var(--img-bgblack);
+	padding:10px 25px;
+	cursor: pointer;
+}
+.News_head h3{
+	font-weight:600;
+	margin-bottom:15px;
+	font-size:22px;
+}
+.News_head h3:hover{
+	 color:var(--green-hover);
+	 cursor: pointer;
+}
+.News_head p{
+	font-weight:400;
+	font-size:20px;
+}
+/* finish News */
+/* subscribe start */
+.subscribe{
+	background:var(--drop-bg);
+	display:flex;
+	justify-content:center;
+	align-items:center
+}
+.icon a{
+	margin:0 10px;
+}
+.subscribe_content h1{
+	font-weight:600;
+	margin-bottom:15px;	
+}
+.subscribe_content p{
+	font-weight:400;
+	font-size:20px;
+}
+/* subscribe finish */
+/* bootom footer start */
+.bootom_footer{
+	background:var(--drop-bg);	
+}
+.footer_head h6{
+	color:var(--white);
+	font-size:20px;
+}
+.footer_compo ul{
+	display:flex;
+	justify-content:end;
+}
+.footer_compo ul li{
+	list-style:none;
+}
+.footer_compo ul li a{
+	text-decoration:none;
+	margin:0 25px;
+	color:var(--white);
+	font-size:18px;
+}
+/* bootom footer finish */
+/* start media Query */
+@media all and (min-width: 992px) and (max-width: 1240px){
+	.rise_neoh::after{
+	display:none;
+		}
+.rise_neoh::before{
+	display:none;
+		}
+	.Invest_img {
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+.rise_nft p {
+    font-size: 17px;
+}
+.footer_head h6{
+	font-size:16px;
+}
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+	.rise_content {
+    padding-left: 0;
+}
+	.rise_content h2 {
+    font-size: 28px;
+    margin-bottom: 17px;
+}
+	.vr {
+    max-width: 180px;
+    margin-bottom:10px;
+}
+	.rise_content p {
+    font-size: 16px;
+}
+.rise_nft h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.rise_nft p {
+    font-size: 13px;   
+}
+	.Invest_img {
+    padding: 25px 5px; 
+}
+	.rise_neoh::after{
+	display:none;
+}
+	.rise_neoh::before{
+	display:none;
+}
+.subscribe_content p {
+    font-size: 16px;
+}
+.footer_head h6{
+	font-size:12px;
+}
+.footer_compo ul li a {
+    margin: 0 5px; 
+}
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+.hero_title h2{	
+font-size:65px;
+}
+.hero_title p{
+	font-size:16px;
+}
+.rise_content h2 {
+  margin-bottom: 10px;
+}
+.vr {
+  margin-bottom: 10px;
+}
+.rise_content{
+	padding-left:0px;
+}
+.rise_content p {
+  font-size: 16px;
+}
+.rise_neoh::after{
+	display:none;
+}
+.rise_neoh::before{
+	display:none;
+}
+.Investors_heading{
+	flex-direction:column;
+}
+.huge_c{
+	margin:18px 0;
+}
+.road_content {
+	margin:15px 0;
+}
+.Invest_img{
+	margin:10px 0;
+}
+.navbar-brand{
+	font-size:12px !important;
+}
+.News_head{
+	padding:40px 0;
+}
+.News_head h3{
+	font-size:18px;
+}
+.News_head p{
+	font-size:16px;
+}
+.subscribe_content p {
+	font-size:16px;
+}
+.footer_head h6{
+	font-size:12px;
+	margin-left:13px;
+}
+.footer_compo ul {
+    display: flex;
+    flex-direction: column;
+}
+.footer_compo ul li a {
+   padding:40px;
+}
+/* finish media Query */
